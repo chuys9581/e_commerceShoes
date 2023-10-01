@@ -1,0 +1,25 @@
+{
+  "name": "e_commerceshoes",
+  "version": "1.0.0",
+  "description": "This is an e-commerce system that, in addition to having products, payment gateways, etc., has an administration system where the user can modify photos, prices, words, phrases, discounts, icons, with the only exception being the website structure",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chuys9581/e_commerceShoes.git"
+  },
+  "keywords": [
+    "e_commerce"
+  ],
+  "author": "Jesus Jimenez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chuys9581/e_commerceShoes/issues"
+  },
+  "homepage": "https://github.com/chuys9581/e_commerceShoes#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

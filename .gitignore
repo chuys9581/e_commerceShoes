@@ -1,0 +1,28 @@
+# Ignorar la carpeta node_modules y sus contenidos
+node_modules/
+
+# Ignorar archivos de configuración locales (pueden variar según tu proyecto)
+.env
+config/config.json
+
+# Ignorar archivos generados durante la ejecución del proyecto
+logs/
+dist/
+
+# Ignorar archivos temporales y directorios de caché
+.DS_Store
+.vscode/
+
+# Ignorar archivos de registro y archivos de salida
+*.log
+*.out
+
+# Ignorar archivos de respaldo generados por algunos editores
+*~
+*.swp
+
+# Agregar otros archivos específicos de tu proyecto si es necesario
+archivo-personal.txt
+
+# Ignorar la carpeta de datos de MySQL (ajusta la ruta según tu configuración)
+data/
