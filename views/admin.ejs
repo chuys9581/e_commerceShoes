@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resources/style-admin.css">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@300;700&display=swap" rel="stylesheet">
+  <title>Panel de Administrador</title>
+</head>
+<body>
+    <div class="container-principal">
+        <div>
+            <nav>
+                <div class="tittle-nav">
+                    <h1>Ecommerce Admin</h1>
+                </div>
+                <div class="nav-vertical">
+                    <div id="iconOne-container">
+                            <div class="icon-one" id="iconOne">
+                                <img src="resources/images/admin/dashb.png" class="dashboard-icon"><p class="p-icon" id="dashboard-link">Dashboard</p>
+                            </div>
+                            <div class="icon-one2" id="iconOne2">
+                                <img src="resources/images/admin/dashb2.png" class="dashboard-icon" id="dashboard.icon2"><p class="p-icon" id="dashboard-link2">Dashboard</p>
+                            </div>
+                    </div>
+                    <div id="iconTwo-container">
+                        <div class="icon-two" id="iconTwo">
+                            <img src="resources/images/admin/menu.png" class="menu-icon" id="menu-icon"><p class="p-icon" id="menu-link">Menu</p>
+                            <img src="resources/images/admin/menu2.png" class="menu-icon" id="menu-icon2">
+                        </div>
+                    </div>
+                    <div id="iconThree-container"> 
+                        <div class="icon-three" id="iconThree">
+                            <img src="resources/images/admin/banner.png" class="banner-icon" id="banner-icon"><p class="p-icon" id="banner-link">Banner</p>
+                            <img src="resources/images/admin/banner2.png" class="banner-icon" id="banner-icon2">
+                        </div>
+                    </div>
+                    <div id="iconFour-container">
+                        <div class="icon-four" id="iconFour">
+                            <img src="resources/images/admin/contenido.png" class="main-icon" id="main-icon"><p class="p-icon" id="main-link">Contenido</p>
+                            <img src="resources/images/admin/contenido2.png" class="main-icon" id="main-icon2">
+                        </div>
+                    </div>
+                    <div id="iconFive-container">
+                        <div class="icon-five" id="iconFive">
+                            <img src="resources/images/admin/footer.png" class="footer-icon" id="footer-icon"><p class="p-icon" id="footer-link">Footer</p>
+                            <img src="resources/images/admin/footer2.png" class="footer-icon" id="footer-icon2">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <div id="section-menu">
+            <div class="container-items">
+                <div class="logo-change">
+                    <form action="/admin/uploadLogo" method="POST" enctype="multipart/form-data" class="logo-form">
+                        
+                        <label for="logoImage" class="title-logo">Nuevo Logo:</label>
+                        <img id="logoThumbnail" src="<%= logoPath %>" alt="Logo Actual" class="thumbnail">
+                        <input type="file" name="logoImage" accept=".jpg, .jpeg, .png" id="logoInput">
+                        <button type="submit" class="btn-logo">Cambiar Logo</button>
+                    </form>
+                </div>
+                <div class="fondo-change">
+                    <form action="/admin/uploadBackground" method="POST" enctype="multipart/form-data" class="fondo-form">
+                        <!-- Vista previa de la imagen de fondo actual -->
+                        <label for="logoImage" class="title-fondo">Nuevo Fondo:</label>
+                        <img id="currentBackground" src="<%= backgroundImagePath %>" alt="Imagen actual de fondo">
+                        
+                        <input type="file" name="backgroundImage" id="backgroundImageInput" accept=".jpg, .jpeg, .png">
+                        
+                        <!-- Vista previa de la nueva imagen de fondo -->
+                        <img id="newBackgroundPreview" src="" alt="Vista previa de la nueva imagen de fondo" style="display: none;">
+                        <button type="submit" class="btn-fondo">Cambiar Imagen de Fondo</button>
+                    </form>                       
+                </div>
+                <div class="menu-change">
+                    <form action="/admin/changeTitle" method="POST" class="form-category">
+                        <label for="menuCategorias" class="title-categorias">Menú Categorías:</label>
+                        <div class="input-category">
+                            <input type="text" id="newTitle" name="newTitle" value="<%= newTitle %>">
+                            <input type="text" id="newTitle2" name="newTitle2" value="<%= newTitle2 %>">
+                            <input type="text" id="newTitle3" name="newTitle3" value="<%= newTitle3 %>">
+                            <input type="text" id="newTitle4" name="newTitle4" value="<%= newTitle4 %>">
+                            <input type="text" id="newTitle5" name="newTitle5" value="<%= newTitle5 %>">
+                            <input type="text" id="newTitle6" name="newTitle6" value="<%= newTitle6 %>">
+                        </div>
+                        <button type="submit" class="btn-categoryMan">Cambiar Palabra</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-items2">
+                <div class="change-categoryMan">
+                    <form action="/admin/changeCategoryMan" method="POST" class="form-categoryMan">
+                        <label for="menuCategorias" class="title-categoriasHombre">Categorías Hombre:</label>
+                        <div class="input-categoryMan">
+                            <input type="text" id="categoriasHombre" name="categoriasHombre" value="<%= categoriasHombre %>">
+                            <input type="text" id="categoriasHombre2" name="categoriasHombre2" value="<%= categoriasHombre2 %>">
+                            <input type="text" id="categoriasHombre3" name="categoriasHombre3" value="<%= categoriasHombre3 %>">
+                            <input type="text" id="categoriasHombre4" name="categoriasHombre4" value="<%= categoriasHombre4 %>">
+                        </div>
+                        <button type="submit" class="btn-categoryMan">Cambiar Palabra</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="section-banner">
+            <h1>Administrador Banner</h1>
+            <p>Aquí puedes cambiar las imágenes del banner:</p>
+            <form action="/admin/upload" method="POST" enctype="multipart/form-data">
+              <div>
+                <label for="product1Image">Imagen de Producto 1:</label>
+                <input type="file" name="product1Image" accept=".jpg, .jpeg, .png">
+              </div>
+              <div>
+                <label for="product2Image">Imagen de Producto 2:</label>
+                <input type="file" name="product2Image" accept=".jpg, .jpeg, .png">
+              </div>
+              <div>
+                <label for="product3Image">Imagen de Producto 3:</label>
+                <input type="file" name="product3Image" accept=".jpg, .jpeg, .png">
+              </div>
+              <div>
+                <label for="product4Image">Imagen de Producto 4:</label>
+                <input type="file" name="product4Image" accept=".jpg, .jpeg, .png">
+              </div>
+              <div>
+                <label for="product5Image">Imagen de Producto 5:</label>
+                <input type="file" name="product5Image" accept=".jpg, .jpeg, .png">
+              </div>
+              <button type="submit">Subir Imágenes</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="resources/utils.js"></script>
+</body>
+</html>

@@ -1,0 +1,301 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container-principal{
+    display: flex;
+    flex-direction: row;
+}
+
+.tittle-nav{
+    color: white;
+    font-family: 'Exo';
+    font-size: .8rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+    background-color: #d51920;
+    height: 100vh;
+}
+
+.nav-vertical{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    font-family: 'Exo';
+}
+
+.icon-one,
+.icon-one2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+}
+.dashboard-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.6rem;
+    margin-top: -0.2rem;
+}
+
+.p-icon{
+    margin-top: 0rem;
+}
+.icon-two,
+.icon-two2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-left: -2rem;
+}
+
+.menu-icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.6rem;
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+}
+
+.icon-three{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.banner-icon{
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-right: 0.6rem;
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+}
+
+.icon-four{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.main-icon{
+    width: 1.9rem;
+    height: 1.9rem;
+    margin-right: 0.6rem;
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+}
+
+.icon-five{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.footer-icon{
+    width: 2.1rem;
+    height: 2.1rem;
+    margin-right: 0.6rem;
+    margin-top: -0.2rem;
+    margin-left: -0.5rem;
+}
+
+#iconOne-container,
+#iconTwo-container,
+#iconThree-container,
+#iconFour-container,
+#iconFive-container:hover{
+    cursor: pointer;
+}
+
+#logoThumbnail{
+    width: 5rem;
+    height: 3rem;
+}
+
+#currentBackground{
+    width: 6rem;
+    height: 4rem;
+}
+
+#newBackgroundPreview{
+    width: 5rem;
+    height: 3rem;
+}
+
+.container-items{
+    display: flex;
+    flex-direction: row;
+}
+
+.fondo-change,
+.menu-change,
+.change-categoryMan,
+.logo-change{
+    display: flex;
+    flex-direction: column;
+    width: 18rem;
+    height: 15rem;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    background: rgba(255, 0, 0, 0.1); /* Color de fondo rojo con opacidad del 10% */
+    backdrop-filter: blur(20px); /* Desenfoque del fondo */
+    -webkit-backdrop-filter: blur(10px); /* Para compatibilidad con Safari */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 1px solid rgba(255, 255, 255, 0.18); /* Borde blanco con opacidad del 18% */
+}
+
+.logo-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+.title-logo{
+    margin-bottom: 1rem;
+    font-family: 'Exo';
+    font-weight: 700;
+}
+
+#logoInput{
+    margin-top: 1rem;
+}
+
+.title-fondo{
+    margin-bottom: 1rem;
+    font-family: 'Exo';
+    font-weight: 700;
+}
+
+.fondo-form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+}
+
+#backgroundImageInput{
+    margin-top: 1rem;
+}
+
+.btn-fondo{
+    padding: 10px 20px;
+    border: none;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.btn-fondo{
+    background: #d51920;
+    box-shadow: 0 0 10px rgb(213, 25, 32);
+    margin-top: 1rem;
+}
+
+.btn-fondo:hover{
+    box-shadow: 0 0 2px rgb(213, 25, 32),
+            0 0 6px rgb(213, 25, 32),
+            0 0 15px rgb(213, 25, 32),
+            0 0 25px rgb(213, 25, 32);
+
+    cursor: pointer;
+}
+
+.btn-logo{
+    padding: 10px 20px;
+    width: 8rem;
+    border: none;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+}
+
+.btn-logo{
+    background: #d51920;
+    box-shadow: 0 0 10px rgb(213, 25, 32);
+    margin-top: 1rem;
+}
+
+.btn-logo:hover{
+    box-shadow: 0 0 2px rgb(213, 25, 32),
+            0 0 6px rgb(213, 25, 32),
+            0 0 15px rgb(213, 25, 32),
+            0 0 25px rgb(213, 25, 32);
+
+    cursor: pointer;
+}
+
+.form-category,
+.form-categoryMan{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.btn-categoryMan{
+    padding: 10px 20px;
+    width: 10rem;
+    border: none;
+    font-size: 11px;
+    color: #fff;
+    border-radius: 7px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    margin: auto;
+}
+
+.btn-categoryMan{
+    background: #d51920;
+    box-shadow: 0 0 10px rgb(213, 25, 32);
+    margin-top: 1rem;
+}
+
+.btn-categoryMan:hover{
+    box-shadow: 0 0 2px rgb(213, 25, 32),
+            0 0 6px rgb(213, 25, 32),
+            0 0 15px rgb(213, 25, 32),
+            0 0 25px rgb(213, 25, 32);
+
+    cursor: pointer;
+}
+
+.title-categorias,
+.title-categoriasHombre{
+    margin-bottom: 1rem;
+    font-family: 'Exo';
+    font-weight: 700;
+    text-align: center;
+}
+
+.input-category,
+.input-categoryMan{
+    display: flex;
+    flex-direction: column;
+    width: 11rem;
+    margin: auto;
+}

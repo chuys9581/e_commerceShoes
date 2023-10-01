@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda en línea</title>
+  <link rel="stylesheet" href="resources/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo:wght@700&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('<%= backgroundImagePath %>') center/cover no-repeat;">
+        <nav>
+            <img src="<%= logoPath %>" class="logo">
+            <div class="search-container">
+                <img src="resources/images/search.png" class="search-icon">
+                <input type="text" id="search" placeholder="SEARCH...">
+            </div>
+            <ul class="menu">
+                <div class="menu-single">
+                    <li class="menu-item">
+                        <p class="title-nav"><%= newTitle %></p>
+                        <ul class="submenu-man">
+                            <li><p class="title-li"><%= categoriasHombre %></p>
+                                <ul class="options-li">
+                                    <li>LO MÁS NUEVO</li>
+                                    <li>LO MÁS VENDIDO</li>
+                                    <li>BÁSICOS</li>
+                                    <li>REBAJAS</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li"><%= categoriasHombre2 %></p>
+                                <ul class="options-li">
+                                    <li>Classics</li>
+                                    <li>Classics Plus</li>
+                                    <li>Skate</li>
+                                    <li>UltraRange</li>
+                                    <li>Surf</li>
+                                    <li>MTE</li>
+                                    <li>Sandalias</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li"><%= categoriasHombre3 %></p>
+                                <ul class="options-li">
+                                    <li>Camisas y Franelas</li>
+                                    <li>Playeras</li>
+                                    <li>Chamarras y Sudaderas</li>
+                                    <li>Pantalones y Pants</li>
+                                    <li>Shorts y Trajes de baño</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li"><%= categoriasHombre4 %></p>
+                                <ul class="options-li">
+                                    <li>Mochilas</li>
+                                    <li>Calcetines</li>
+                                    <li>Cinturones</li>
+                                    <li>Beanies</li>
+                                    <li>Gorras</li>
+                                    <li>Lentes</li>
+                                    <li>Limpiadores</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <img src="resources/images/flecha.png" class="flecha">
+                    <p class="diagonal">/</p>
+                </div>
+                
+                <div class="menu-single">
+                    <li class="menu-item">
+                        <p class="title-nav"><%= newTitle2 %></p>
+                        <ul class="submenu-woman">
+                            <li><p class="title-li">PRODUCTOS DESTACADOS</p>
+                                <ul class="options-li">
+                                    <li>LO MÁS NUEVO</li>
+                                    <li>LO MÁS VENDIDO</li>
+                                    <li>BÁSICOS</li>
+                                    <li>REBAJAS</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">CALZADO</p>
+                                <ul class="options-li">
+                                    <li>Classics</li>
+                                    <li>Classics Plus</li>
+                                    <li>Surf</li>
+                                    <li>Skate</li>
+                                    <li>UltraRange</li>
+                                    <li>MTE</li>
+                                    <li>Plataformas</li>
+                                    <li>Sandalias</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">ROPA</p>
+                                <ul class="options-li">
+                                    <li>Camisas y Franelas</li>
+                                    <li>Playeras y Tops</li>
+                                    <li>Chamarras y Sudaderas</li>
+                                    <li>Pantalones y Leggings</li>
+                                    <li>Vestidos y Faldas</li>
+                                    <li>Shorts</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">ACCESORIOS</p>
+                                <ul class="options-li">
+                                    <li>Mochilas</li>
+                                    <li>Calcetines</li>
+                                    <li>Gorras y Beanies</li>
+                                    <li>Lentes</li>
+                                    <li>Limpiadores</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <img src="resources/images/flecha.png" class="flecha">
+                    <p class="diagonal">/</p>
+                </div>
+                <div class="menu-single">
+                    <li class="menu-item">
+                        <p class="title-nav"><%= newTitle3 %></p>
+                        <ul class="submenu-kids">
+                            <li><p class="title-li">PRODUCTOS DESTACADOS</p>
+                                <ul class="options-li">
+                                    <li>LO MÁS NUEVO</li>
+                                    <li>LO MÁS VENDIDO</li>
+                                    <li>REBAJAS</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">CALZADO</p>
+                                <ul class="options-li">
+                                    <li>Classics</li>
+                                    <li>Old Skool</li>
+                                    <li>Sk8-Hi</li>
+                                    <li>Slip-On</li>
+                                    <li>Sandalias</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">ROPA</p>
+                                <ul class="options-li">
+                                    <li>Camisas y Franelas</li>
+                                    <li>Playeras</li>
+                                    <li>Chamarras</li>
+                                    <li>Sudaderas</li>
+                                    <li>Shorts y Trajes de Baño</li>
+                                </ul>
+                            </li>
+                            <li><p class="title-li">ACCESORIOS</p>
+                                <ul class="options-li">
+                                    <li>Gorras</li>
+                                    <li>Mochilas</li>
+                                    <li>Limpiadores</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <img src="resources/images/flecha.png" class="flecha">
+                    <p class="diagonal">/</p>
+                </div>
+                <div class="menu-single">
+                    <li class="menu-item"><p class="title-nav" id="title-nav"><%= newTitle4 %></p>
+                    <img src="resources/images/flecha.png" class="flecha" id="flecha">
+                    <p class="diagonal" id="diagonal">/</p>
+                </div>
+                <div class="menu-single" id="menu-single">
+                    <li class="menu-item"><p class="title-nav" id="title-nav"><%= newTitle5 %></p>
+                    <img src="resources/images/flecha.png" class="flecha" id="flecha">
+                    <p class="diagonal" id="diagonal">/</p>
+                </div>
+                <div class="menu-single" id="menu-single">
+                    <li class="menu-item"><p class="title-nav" id="title-nav"><%= newTitle6 %></p>
+                    <img src="resources/images/flecha.png" class="flecha" id="flecha">
+                </div>
+            </ul>
+            <div class="alta">
+                <div class="login"><p><b>LOGIN</b></p></div>
+                <div class="register"><p><b>REGISTER</b></p></div>
+            </div>
+            <img src="resources/images/carrito.png" class="carrito">
+        </nav>
+        <div class="line-container">
+            <div class="line"></div>
+        </div>
+        <div class="parraf-container">
+            <h1 class="title-firts">VANS IS OLD SKOOL</h1>
+            <div class="parraf-second">
+                <p>INTRODUCED IN 1997, THE STYLE #36, NOW KNOW AS</p>
+                <P>OLD SKOOL, WAS THE FIRTS VANS SHOE TO</P>
+                <p>FEATURE THE ICONIC SIDESTRIPE</p>
+            </div>
+            <button class="btn-one">DISCOVER NOW  ></button>
+        </div>
+    </div>
+  <h1 class="title-main">FEATURED PRODUCTS</h1>
+  <div class="container-checkbox">
+    <div class="check-one">
+        <input type="checkbox" class="box-check"><p>MEN</p>
+    </div>
+    <div class="check-one">
+        <input type="checkbox" class="box-check"><p>WOMAN</p>  
+    </div>
+    <div class="check-one">
+        <input type="checkbox" class="box-check"><p>KIDS</p> 
+    </div>
+    <div class="check-one">
+        <input type="checkbox" class="box-check"><p>SKATE</p> 
+    </div>
+  </div>
+  <ul class="container-products">
+    <% products.forEach(product => { %>
+        <li class="product">
+            <img src="resources/images/addtocar.png" class="anadir-carrito">
+            <img src="<%= product.image %>" alt="<%= product.name %>" class="product-image">
+            <h2 class="product-name"><%= product.name %></h2>
+          </li>
+    <% }); %>
+  </ul>
+
+
+
+  <script src="resources/utils-index.js"></script>
+</body>
+</html>

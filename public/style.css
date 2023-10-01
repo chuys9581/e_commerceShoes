@@ -1,0 +1,382 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7 ;
+}
+
+.logo{
+    width: 10.5rem;
+    height: 5rem;
+    position: relative; /* Asegura que el logotipo esté en posición relativa */
+    z-index: 1; /* Coloca el logotipo sobre el fondo */
+    margin-right: 3rem;
+}
+
+.container {
+    position: relative; /* Establece el contenedor como posición relativa */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 48rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /* Pseudo-elemento con fondo oscuro y opacidad */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    z-index: -1; /* Coloca el fondo detrás de otros elementos */
+  }
+  
+  /* Establece el fondo de la imagen */
+  .container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../resources/images/fondo_vans.jpeg) center/cover no-repeat;
+    z-index: -2; /* Coloca la imagen detrás del fondo oscuro */
+  }
+  
+  .fa-regular fa-magnifying-glass{
+    width: 5rem;
+  }
+
+  /* Estilos para el contenedor de búsqueda */
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: transparent; /* Cambia el color de fondo según tu diseño */
+    border: none; /* Puedes ajustar el borde según tus preferencias */
+    padding: 5px;
+    border-radius: 5px;
+    margin-right: 1.5rem;
+    margin-top: .8rem;
+}
+
+/* Estilos para el campo de entrada de búsqueda */
+#search {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    font-size: .7rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos para el ícono de búsqueda */
+.search-icon {
+    width: 23px; /* Ajusta el tamaño del ícono según tus preferencias */
+    height: 23px;
+    margin-right: 5px; /* Espacio entre el input y el ícono */
+}
+
+#search::placeholder {
+    color: white; /* Color blanco para el marcador de posición */
+}
+
+/* Estilos para el menú de navegación */
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 5rem;
+    margin-left: -5rem;
+    font-size: .9rem;
+    margin-bottom: -1rem;
+    margin-top: 1.5rem
+}
+
+#menu-single{
+    margin-left: -.7rem;
+}
+
+.menu-single{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: row;
+    color: white; /* Color del texto en las secciones */
+    padding: 10px;
+    position: relative; /* Necesario para los íconos */
+    margin-top: -1rem;
+}
+#flecha{
+    margin-top: 1.3rem;
+}
+.flecha{
+    width: 0.6rem;
+    height: 0.4rem;
+    margin-top: 1rem;
+    margin-left: -0.2rem;
+}
+
+#diagonal{
+    margin-top: .1rem;
+}
+
+.diagonal{
+    font-size: 1.4rem;
+    color: white;
+    margin-top: -0.19rem;
+    margin-left: 0.5rem;
+    padding-top: 0.4rem;
+}
+
+.carrito{
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1.5rem;
+    padding-left: 3rem;
+}
+
+.anadir-carrito{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-left: 10.5rem;
+}
+
+.login{
+    color: white;
+    margin-right: 1.5rem;
+}
+
+.login:hover{
+    cursor: pointer;
+}
+
+.register{
+    color: white;
+}
+
+.register:hover{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans Narrow', sans-serif;
+    margin-top: -42.7rem;
+    top: 0;
+    bottom: 0;
+    position: sticky;
+    border-bottom: 1px solid gray;
+}
+
+.alta{
+    display: flex;
+    flex-direction: row;
+    margin-top: 1.4rem;
+    font-size: .8rem;
+    margin-left: -1rem;
+}
+
+.line{
+    width: 74%;
+    height: .5px;
+    background: #E7E7E7;
+    margin-top: -1.6rem;
+    opacity: .6;
+}
+
+.parraf-container{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35rem;
+    margin-left: 55rem;
+    font-family: 'Exo', sans-serif;
+}
+
+.title-firts{
+    font-size: 3rem;
+    margin-bottom: -.1rem;
+}
+
+.parraf-second{
+    font-size: .8rem;
+    margin-top: .3rem;
+}
+
+.btn-one{
+    width: 11rem;
+    height: 3rem;
+    margin-top: 1.4rem;
+    background-color: #d51920;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-one:hover{
+    cursor: pointer;
+}
+
+/* Estilos para la lista de productos */
+.product-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  /* Estilos para cada producto individual */
+  .product {
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 200px;
+  }
+  
+  /* Estilos para el nombre del producto */
+  .product-name {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Estilos para la imagen del producto */
+  .product-image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+.container-products{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.title-main{
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    font-weight: unset;
+    letter-spacing: .2rem;
+}
+
+.container-checkbox{
+    display: flex;
+    justify-content: center;
+    font-family: 'Exo', sans-serif;
+    color: #8A8A8A;
+    margin-top: -1.2rem;
+}
+
+.check-one{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 1rem;
+    font-size: .9rem;
+}
+
+.box-check{
+    width: .7rem;
+    margin-top: -.0rem;
+}
+.submenu-man{
+    position: absolute;
+    left: 10%;
+    transform: translateX(-30%);
+    margin-top: 3.9rem;
+    width: 60vw;
+    height: 12rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+    color: white;
+}
+.menu-single .submenu-man {
+    display: none;
+}
+
+.menu-single:hover .submenu-man {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+
+}
+
+li {
+    list-style-type: none;
+}
+
+ul{
+    margin-left: -2.4rem;
+}
+
+.title-li{
+    margin-bottom: 1rem;
+}
+#title-nav{
+    margin-right: .5rem;
+}
+.title-nav:hover{
+    color: #d51920;
+    cursor: pointer;
+}
+
+.options-li{
+    color: #85bee3;
+}
+
+.options-li:hover{
+    cursor: pointer;
+}
+
+.options-li li:hover {
+    color: red;
+}
+
+.submenu-woman{
+    position: absolute;
+    left: 10%;
+    transform: translateX(-39%);
+    margin-top: 3.9rem;
+    width: 60vw;
+    height: 14rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+    color: white;
+}
+.menu-single .submenu-woman {
+    display: none;
+}
+
+.menu-single:hover .submenu-woman {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+}
+
+.submenu-kids{
+    position: absolute;
+    left: 10%;
+    transform: translateX(-47%);
+    margin-top: 3.9rem;
+    width: 60vw;
+    height: 10rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro con 50% de opacidad */
+    color: white;
+}
+.menu-single .submenu-kids {
+    display: none;
+}
+
+.menu-single:hover .submenu-kids {
+    display: flex;
+    position: absolute;
+    justify-content: space-around;
+}
