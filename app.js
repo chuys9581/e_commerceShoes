@@ -20,6 +20,32 @@ let pageTitles2 = {
   categoriasHombre4:"ACCESORIOS"
 }
 
+let pageTitles3 = {
+  subCategoriasHombre: "LO MÁS NUEVO",
+  subCategoriasHombre2: "LO MÁS VENDIDO",
+  subCategoriasHombre3: "BÁSICOS",
+  subCategoriasHombre4: "REBAJAS",
+  subCategoriasHombre5: "Classics",
+  subCategoriasHombre6: "Classics Plus",
+  subCategoriasHombre7: "Skate",
+  subCategoriasHombre8: "UltraRange",
+  subCategoriasHombre9: "Surf",
+  subCategoriasHombre10: "MTE",
+  subCategoriasHombre11: "Sandalias",
+  subCategoriasHombre12: "Camisas y Franelas",
+  subCategoriasHombre13: "Playeras",
+  subCategoriasHombre14: "Chamarras y Sudaderas",
+  subCategoriasHombre15: "Pantalones y Pants",
+  subCategoriasHombre16: "Shorts y Trajes de Baño",
+  subCategoriasHombre17:"Mochilas",
+  subCategoriasHombre18: "Calcetines",
+  subCategoriasHombre19: "Cinturones",
+  subCategoriasHombre20: "Beanies",
+  subCategoriasHombre21: "Gorras",
+  subCategoriasHombre22: "Lentes",
+  subCategoriasHombre23: "Limpiadores"
+}
+
 let backgroundImagePath = '/resources/images/fondo_vans.jpeg';
 // Define una variable global para almacenar la ruta del logo
 let logoPath = '/resources/images/Vanslogo.jpg'; 
@@ -52,11 +78,11 @@ const products = [
 ];
 
 app.get('/', (req, res) => {
-  res.render('index', { products, logoPath, backgroundImagePath, ...pageTitles, ...pageTitles2 });
+  res.render('index', { products, logoPath, backgroundImagePath, ...pageTitles, ...pageTitles2, ...pageTitles3 });
 });
 
 app.get('/admin', (req, res) => {
-  res.render('admin', { logoPath, backgroundImagePath, ...pageTitles, ...pageTitles2 });
+  res.render('admin', { logoPath, backgroundImagePath, ...pageTitles, ...pageTitles2, ...pageTitles3 });
 });
 
 app.post('/admin/changeTitle', (req, res) => {
@@ -72,6 +98,15 @@ app.post('/admin/changeCategoryMan', (req, res) => {
   for (let title2 in pageTitles2) {
     if (req.body[title2]) {
       pageTitles2[title2] = req.body[title2];
+    }
+  }
+  res.redirect('/admin');
+});
+
+app.post('/admin/changeSubCategoryMan', (req, res) => {
+  for (let title3 in pageTitles3) {
+    if (req.body[title3]) {
+      pageTitles3[title3] = req.body[title3];
     }
   }
   res.redirect('/admin');
